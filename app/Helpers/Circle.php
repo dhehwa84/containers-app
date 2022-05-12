@@ -1,4 +1,5 @@
 <?php
+namespace App\Helpers;
 class Circle {
   public $radius;
 
@@ -11,5 +12,8 @@ class Circle {
   function get_volume() {
     return $this->radius * 2;
   }
+   function setVolume() {
+      $this->volume = $this->radius * 2;
+    }
 }
 ?>

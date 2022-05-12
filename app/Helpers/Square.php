@@ -1,8 +1,10 @@
 <?php
-class Container extends Quadrilateral{
-
-    function get_volume() {
-        return $this->width * $this->length;
-      }
+namespace App\Helpers;
+class Square extends Quadrilateral{
+    
+  function setVolume() {
+    $this->volume = $this->length * $this->width;
+  }
+    
 }
 ?>

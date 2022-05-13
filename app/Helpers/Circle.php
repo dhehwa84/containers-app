@@ -2,6 +2,7 @@
 namespace App\Helpers;
 class Circle {
   public $radius;
+  public $name = "Circle";
 
   function __construct($radius) {
     $this->radius = $radius;

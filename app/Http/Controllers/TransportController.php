@@ -33,10 +33,6 @@ class TransportController extends Controller
 
         try {
             $calculationHelper = new HelpersCalculations();
-            // return response()->json([
-            //     'success' => false,
-            //     'data' => $calculationHelper->getTransports($request->transport) 
-            // ], 200);
             return response()->json([
                 'success' => true,
                 'data' => $calculationHelper->calculate(
